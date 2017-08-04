@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Reportcard</string>
+    <string-array name="siweya">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Bisexual</item>
+
+
+    </string-array>
+
+</resources>
+
+

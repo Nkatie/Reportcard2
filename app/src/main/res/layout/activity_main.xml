@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theomen">
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editstud"
+        android:layout_alignStart="@+id/editstud"
+        android:layout_marginTop="31dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:onClick="addLeaner"
+        android:text="add"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_alignTop="@+id/editstud"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <Button
+        android:text="delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="delete"
+        android:textStyle="normal|bold"
+        tools:ignore="RelativeOverlap"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <EditText
+        android:id="@+id/editstud"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:hint="Enter Studentno"
+        android:inputType="none"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_below="@+id/editName"
+        android:layout_alignLeft="@+id/editTest1"
+        android:layout_alignStart="@+id/editTest1"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:id="@+id/editTest1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter test 1"
+        android:textSize="18sp"
+        android:gravity="center_vertical|center"
+        android:inputType="textPersonName"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/editstud"
+        android:layout_alignLeft="@+id/editTest2"
+        android:layout_alignStart="@+id/editTest2" />
+
+    <EditText
+        android:id="@+id/editTest2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:textSize="18sp"
+        android:hint="Enter test 2"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTest2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTest2"
+        android:layout_marginBottom="13dp"
+        android:onClick="update"
+        android:text="update" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textSize="50dp"
+        android:gravity="center_vertical|center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:inputType="textPersonName"
+        android:hint="Enter number to update"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+
+
+</RelativeLayout>
